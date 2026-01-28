@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Acuerdo Romántico ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #ff4d6d;
+            --secondary: #ff758f;
+            --bg: #fff0f3;
+            --text: #590d22;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg);
+            color: var(--text);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Contenedor optimizado para móvil */
+        .card {
+            background: white;
+            width: 92%;
+            max-width: 400px;
+            margin: 20px auto;
+            border-radius: 30px;
+            box-shadow: 0 15px 35px rgba(255, 77, 109, 0.2);
+            padding: 25px;
+            box-sizing: border-box;
+            text-align: center;
+            position: relative;
+            border: 2px solid #ffb3c1;
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            color: var(--primary);
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .intro {
+            font-size: 0.85rem;
+            line-height: 1.4;
+            margin-bottom: 20px;
+            color: #800f2f;
+        }
+
+        h2 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 20px 0 10px;
+            color: var(--secondary);
+            border-bottom: 1px solid #ffccd5;
+            display: inline-block;
+        }
+
+        /* Lista de cláusulas compacta para scroll móvil */
+        .clausulas-container {
+            text-align: left;
+            max-height: 300px;
+            overflow-y: auto;
+            padding-right: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Personalización de scrollbar */
+        .clausulas-container::-webkit-scrollbar {
+            width: 4px;
+        }
+        .clausulas-container::-webkit-scrollbar-thumb {
+            background: var(--secondary);
+            border-radius: 10px;
+        }
+
+        .clausula {
+            font-size: 0.8rem;
+            margin-bottom: 12px;
+            padding: 10px;
+            background: #fff8f9;
+            border-radius: 15px;
+        }
+
+        .clausula b {
+            color: var(--primary);
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        .footer-note {
+            font-size: 0.7rem;
+            font-style: italic;
+            margin-top: 15px;
+            color: #c9184a;
+        }
+
+        /* Botón estilo "App" */
+        button {
+            background: var(--primary);
+            color: white;
+            border: none;
+            width: 100%;
+            padding: 16px;
+            font-size: 1.1rem;
+            border-radius: 20px;
+            font-family: 'Dancing Script', cursive;
+            font-weight: bold;
+            box-shadow: 0 6px 15px rgba(255, 77, 109, 0.3);
+            cursor: pointer;
+            transition: transform 0.2s;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        /* Corazones animados */
+        .heart {
+            position: fixed;
+            font-size: 20px;
+            user-select: none;
+            pointer-events: none;
+            z-index: 1000;
+            animation: fly linear forwards;
+        }
+
+        @keyframes fly {
+            0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Contrato de Consentimiento Afectivo ❤️</h1>
+        
+        <p class="intro">
+            <b>Janett Garcia Escobar</b> <small>(La Novia más chula)</small><br>
+            <b>&</b><br>
+            <b>Luis Angel Tecuapetla</b><br>    
+        </p>
+
+        <h2>Cláusulas</h2>
+
+        <div class="clausulas-container">
+            <div class="clausula">
+                <b>I. Del Objeto</b>
+                El presente documento tiene como fin legalizar el derecho absoluto, pleno e irrestricto de Luis Angel Tecuapetla Conde para proceder al acto de besar a Janett Garcia Escobar, reconociendo este acto como una expresión legítima de afecto.
+            </div>
+            <div class="clausula">
+                <b>II. De la Duración</b>
+                Se estipula de manera irrevocable que la vigencia de dicho derecho se extenderá "hasta el cansancio", o en su defecto, hasta que los labios de ambas partes así lo determinen por mutuo acuerdo, sin que existan límites de tiempo o espacio predefinidos.
+            </div>
+            <div class="clausula">
+                <b>III. Del Consentimiento</b>
+                La Sra. Janett Garcia Escobar manifiesta, por su propia voluntad y libre de cualquier vicio de consentimiento, dolo o mala fe, que otorga su autorización total para que el Sr. Tecuapetla Conde ejecute dicha acción de manera continua y devota.
+            </div>
+            <div class="clausula">
+                <b>IV. De la Jurisdicción</b>
+                Ambas partes acuerdan que cualquier "diferencia" o "conflicto" derivado de este contrato se resolverá mediante más besos, abrazos y muestras de cariño, renunciando a cualquier otra instancia que no sea la del corazón.
+            </div>
+        </div>
+
+        <button onclick="firmar()">Firmar con un Beso ❤️</button>
+
+        <p class="footer-note">
+            ⚠️ Riesgo alto de enamoramiento crónico. Validez emocional épica.
+        </p>
+    </div>
+
+    <script>
+        function firmar() {
+            // Reproducir música
+            const audio = new Audio('Soy tu amante.mp3');
+            audio.play().catch(error => console.log("El audio requiere interacción previa o el archivo no existe:", error));
+
+            const btn = document.querySelector('button');
+            btn.innerHTML = "¡Sellado con Amor! ❤️";
+            btn.style.background = "#ffb3c1";
+            btn.disabled = true;
+
+            // Lluvia de corazones para móvil
+            for (let i = 0; i < 30; i++) {
+                setTimeout(createHeart, i * 100);
+            }
+        }
+
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.className = 'heart';
+            heart.innerHTML = ['❤️', '💖', '💗', '💕', '💋'][Math.floor(Math.random() * 5)];
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.top = '100vh';
+            heart.style.duration = (Math.random() * 2 + 3) + 's';
+            
+            document.body.appendChild(heart);
+            
+            const animationDuration = Math.random() * 2 + 2;
+            heart.style.animation = `fly ${animationDuration}s linear forwards`;
+
+            setTimeout(() => {
+                heart.remove();
+            }, animationDuration * 1000);
+        }
+    </script>
+</body>
+</html>
