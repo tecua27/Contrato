@@ -180,45 +180,9 @@
     </div>
 
     <script>
-
-
-function firmar() {
-    // Referencia al elemento de audio del HTML
-    const audio = document.getElementById('Soy tu amante.mp3');
-    
-    // Forzamos la carga y reproducción
-    audio.load(); 
-    audio.volume = 1.0; 
-    
-    const playPromise = audio.play();
-
-    if (playPromise !== undefined) {
-        playPromise.then(_ => {
-            console.log("Reproduciendo con éxito");
-        }).catch(error => {
-            console.log("Error de reproducción: ", error);
-            // Intento alternativo si falla el primero
-            audio.play(); 
-        });
-    }
-
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
         function firmar() {
             // Reproducir música
-            const audio = new Audio('Soy tu amante.mp3');
+            const audio = new Audio('Soy Tu Amante.mp3');
             audio.play().catch(error => console.log("El audio requiere interacción previa o el archivo no existe:", error));
 
             const btn = document.querySelector('button');
@@ -252,4 +216,5 @@ function firmar() {
     </script>
 </body>
 </html>
+
 
